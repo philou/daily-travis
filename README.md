@@ -35,12 +35,11 @@ heroku config:add TRAVIS_REPOSITORY=<github-user>/<github-repo>
 heroku config:add TRAVIS_TOKEN=`bundle exec travis token`
 ```
 
-* Test the build by manually running
+* Test that the latest build is restarted by manually running
 
 ```shell
 heroku run rake build
 ```
-It should restart the latest build
 
 * Add the scheduler to your heroku app
 

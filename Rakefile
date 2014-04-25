@@ -1,7 +1,7 @@
 require 'travis'
 
-desc "Builds the ENV['TRAVIS_REPOSITORY'] travis job with token ENV['TRAVIS_TOKEN']"
+desc "Builds the ENV['TRAVIS_REPOSITORY'] travis job with token ENV['GITHUB_TOKEN']"
 task :build do
-  Travis.access_token = ENV['TRAVIS_TOKEN']
+  Travis.github_auth(ENV['GITHUB_TOKEN'])
   Travis::Repository.find(ENV['TRAVIS_REPOSITORY']).last_build.restart
 end

@@ -20,19 +20,16 @@ git clone https://github.com/philou/daily-travis.git
 heroku apps:create <my-lib>-daily-travis
 ```
 
-* Generate a travis token
+* Generate a github token
 
-```shell
-bundle install
-bundle exec travis login
-bundle exec travis token
-```
+Explanations are [here](https://help.github.com/articles/creating-an-access-token-for-command-line-use). Default authorizations are fine.
+Note the token somewhere.
 
 * Add the parameters to your heroku app
 
 ```shell
 heroku config:add TRAVIS_REPOSITORY=<github-user>/<github-repo>
-heroku config:add TRAVIS_TOKEN=`bundle exec travis token`
+heroku config:add GITHUB_TOKEN=<github-token>
 ```
 
 * Test that the latest build is restarted by manually running

@@ -20,6 +20,12 @@ git clone https://github.com/philou/daily-travis.git
 heroku apps:create <my-lib>-daily-travis
 ```
 
+* Deploy to heroku
+
+```shell
+git push heroku master
+```
+
 * Generate a github token
 
 Explanations are [here](https://help.github.com/articles/creating-an-access-token-for-command-line-use). Default authorizations are fine.

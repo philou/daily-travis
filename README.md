@@ -52,3 +52,9 @@ heroku addons:open scheduler
 ```
 
 * Add the task ```rake build``` to your heroku scheduler
+
+Alternatives
+============
+
+* The travis team seems to be working on a [Build periodically](https://github.com/travis-ci/travis-ci/issues/582) feature. As of the 04/07/14, it is still not there.
+* The [travis-cron](http://traviscron.pythonanywhere.com/) web app and [git repo](https://github.com/FiloSottile/travis-cron). Which is manually moderated.

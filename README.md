@@ -1,10 +1,12 @@
-daily-travis
-============
+# daily-travis
 
 A dead simple heroku ready travis daily sceduler
 
-Usage
-=====
+## Note 2015-09-04
+
+https://nightli.es/ is an independent service that the travis team [suggests using](https://github.com/travis-ci/travis-ci/issues/582). I switched to this one myself, and am not intending to maintain daily-travis from now on.
+
+## Usage
 
 * Clone this repo locally
 
@@ -53,8 +55,7 @@ heroku addons:open scheduler
 
 * Add the task ```rake build``` to your heroku scheduler
 
-Alternatives
-============
+## Alternatives
 
-* The travis team seems to be working on a [Build periodically](https://github.com/travis-ci/travis-ci/issues/582) feature. As of the 04/07/14, it is still not there.
+* https://nightli.es/ is an independent service that the travis team [suggests using](https://github.com/travis-ci/travis-ci/issues/582)
 * The [travis-cron](http://traviscron.pythonanywhere.com/) web app and [git repo](https://github.com/FiloSottile/travis-cron). Which is manually moderated.

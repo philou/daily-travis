@@ -1,8 +1,14 @@
+[![Project Status: Unsupported – The project has reached a stable, usable state but the author(s) have ceased all work on it. A new maintainer may be desired.](https://www.repostatus.org/badges/latest/unsupported.svg)](https://www.repostatus.org/#unsupported)
+
 # daily-travis
 
 A dead simple heroku ready travis daily sceduler
 
-## Note 2015-09-04
+## :warning: Note 2020-09-04
+
+[Travis CI](https://travis-ci.com/) has now long been supporting its own version of [Cron Jobs](https://docs.travis-ci.com/user/cron-jobs/). There is no use for this tool anymore.
+
+## :warning: Note 2015-09-04
 
 https://nightli.es/ is an independent service that the travis team [suggests using](https://github.com/travis-ci/travis-ci/issues/582). I switched to this one myself, and am not intending to maintain daily-travis from now on.
 
